@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Detail | e-Store</title>
+  <link rel="stylesheet" href="/src/output.css"/>
+</head>
+<body>
+
+
+<main>
+  <div id="productDetail" class="max-w-6xl mx-auto"></div>
+        <!-- Why Choose Us Section -->
+      <section class="py-20 bg-white animate-on-scroll">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Why Choose Us</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+              We provide the best shopping experience with our premium services
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div
+              class="text-center p-6 rounded-2xl bg-gray-50 hover:shadow-lg transition-all duration-300"
+            >
+              <div
+                class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  class="w-8 h-8 text-primary-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-900">
+                Quality Products
+              </h3>
+              <p class="text-gray-600">
+                We carefully select each product to ensure the highest quality.
+              </p>
+            </div>
+            <div
+              class="text-center p-6 rounded-2xl bg-gray-50 hover:shadow-lg transition-all duration-300"
+            >
+              <div
+                class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  class="w-8 h-8 text-primary-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-900">
+                Fast Delivery
+              </h3>
+              <p class="text-gray-600">
+                Quick and reliable shipping to your doorstep.
+              </p>
+            </div>
+            <div
+              class="text-center p-6 rounded-2xl bg-gray-50 hover:shadow-lg transition-all duration-300"
+            >
+              <div
+                class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  class="w-8 h-8 text-primary-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-900">
+                24/7 Support
+              </h3>
+              <p class="text-gray-600">
+                Our customer service team is always here to help.
+              </p>
+            </div>
+            <div
+              class="text-center p-6 rounded-2xl bg-gray-50 hover:shadow-lg transition-all duration-300"
+            >
+              <div
+                class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  class="w-8 h-8 text-primary-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-900">
+                Secure Payment
+              </h3>
+              <p class="text-gray-600">Safe and secure payment methods.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <script type="module">
+const products = [
+  {
+    id: 1,
+    title: "VILINICE Wireless Noise",
+    description: "Experience immersive sound with VILINICE Wireless Noise Cancelling Headphones. Featuring Bluetooth connectivity, over-ear comfort, and a built-in microphone for clear calls. Ideal for travel, work, and music lovers.",
+    category: "Headphone",
+    price: 59.99,
+    rating: { rate: 4.5, count: 120 },
+    image: "https://i5.walmartimages.com/seo/VILINICE-Noise-Cancelling-Headphones-Wireless-Bluetooth-Over-Ear-Headphones-with-Microphone-Black-Q8_b994b99c-835f-42fc-8094-9f6be0f9273b.be59955399cdbd1c25011d4a4251ba9b.jpeg",
+  },
+  {
+    id: 2,
+    title: "Asus ROG Zephyrus",
+    description: "Unleash elite gaming with the Asus ROG Zephyrus laptop. Powered by AMD Ryzen 9 and RTX 4060, it boasts a 14” 3K OLED display, 32GB RAM, and 1TB SSD for smooth, high-performance computing.",
+    category: "Laptop",
+    price: 539.69,
+    rating: { rate: 4.7, count: 340 },
+    image: "https://hanoicomputercdn.com/media/product/88377_laptop_asus_gaming_rog_zephyrus_ga403uv_qs202w_r9_8945hs_32gb_ram_1tb_ssd_14_3k_oled_rtx4060_8gb_win11_xam_chuot_tui.jpg",
+  },
+  {
+    id: 3,
+    title: "Kieslect Ks mini",
+    description: "The Kieslect Ks Mini is a compact smartwatch with fitness tracking, heart rate monitoring, and long battery life. Sleek and lightweight, it’s perfect for staying connected and healthy on the go.",
+    category: "SmartWatch",
+    price: 59.99,
+    rating: { rate: 4.8, count: 95 },
+    image: "https://app-area.riointernational.com.bd/productImages/1719258755Ky3Lb.jpg",
+  },
+  {
+    id: 4,
+    title: "iPhone 16 Pro Max",
+    description: "Discover the power of iPhone 16 Pro Max with the A18 Pro chip, advanced camera control, and 4K Dolby Vision video. Built with durable titanium for a premium, futuristic experience.",
+    category: "Phone",
+    price: 959.99,
+    rating: { rate: 4.7, count: 760 },
+    image: "https://alephksa.com/cdn/shop/files/iPhone_16_Pro_Max_Natural_Titanium_PDP_Image_Position_1__en-ME_a46d3e5e-dad7-4584-9581-342342e640bc.jpg?v=1727250184",
+  },
+  {
+    id: 5,
+    title: "Samsung Galaxy Tap A9",
+    description: "Samsung Galaxy Tab A9 offers a sleek design, 8.7” display, and long-lasting battery life. Great for browsing, streaming, and productivity, all in a budget-friendly package.",
+    category: "Tablet",
+    price: 39.99,
+    rating: { rate: 3.9, count: 80 },
+    image: "https://phonesstorekenya.com/wp-content/uploads/2023/10/Samsung-Galaxy-Tab-A9-with-cover1.jpg",
+  },
+  {
+    id: 6,
+    title: "TrontSmart",
+    description: "Bring the party anywhere with the Tronsmart Halo 200 Speaker. Featuring deep bass, karaoke mic input, and powerful sound output, it's perfect for both indoor and outdoor entertainment.",
+    category: "Speaker",
+    price: 89.99,
+    rating: { rate: 4.6, count: 310 },
+    image: "https://www.tronsmart.com/4442-home_default/tronsmart-halo-200-karaoke-party-speaker.jpg",
+  },
+  {
+    id: 7,
+    title: "Lenovo m10",
+    description: "The Lenovo M10 tablet delivers reliable performance for everyday tasks. With a 10.1” display, quad-core processor, and dual speakers, it's perfect for learning, streaming, and browsing.",
+    category: "Tablet",
+    price: 59.99,
+    rating: { rate: 4.0, count: 300 },
+    image: "https://point.com.ec/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fpoint_pweb%2Fweb2023%2FIMAGENES%2520WEB%2FTABL00019.jpg&w=3840&q=75",
+  },
+  {
+    id: 8,
+    title: "Huawei Watch Fit3",
+    description: "Stay fit in style with the Huawei Watch Fit 3. Lightweight design, AMOLED display, fitness and sleep tracking, and long battery life make it your perfect daily fitness partner.",
+    category: "SmartWatch",
+    price: 129.99,
+    rating: { rate: 3.2, count: 240 },
+    image: "https://metapod.com/cdn/shop/files/HuaweiWatchFit3SmartWatch_Green_1.jpg?v=1719461063&width=1500",
+  },
+  {
+    id: 9,
+    title: "Beat Solo 4",
+    description: "Beats Solo 4 delivers premium sound with punchy bass, active noise cancellation, and a sleek over-ear design. Perfect for music lovers who want comfort and style.",
+    category: "Headphone",
+    price: 265.99,
+    rating: { rate: 4.8, count: 95 },
+    image: "https://oprahdailyprod.vtexassets.com/unsafe/1440x0/center/middle/filters:quality(85)/https%3A%2F%2Foprahdailyprod.vtexassets.com%2Farquivos%2Fids%2F912220%2Fimage_1.jpg%3Fv%3D638792136156100000",
+  },
+  {
+    id: 10,
+    title: "Samsung Galaxy S25 Ultra",
+    description: "Meet the future with Samsung Galaxy S25 Ultra. Featuring a stunning camera, 120Hz display, and a blazing fast processor, it's built for those who demand more from their smartphone.",
+    category: "Phone",
+    price: 939.99,
+    rating: { rate: 4.5, count: 420 },
+    image: "https://www.phoneprice.co.ke/wp-content/uploads/2025/01/Samsung-Galaxy-S25-Ultra-a1.jpg",
+  },
+  {
+    id: 11,
+    title: "BlueStream BTDJ822",
+    description: "Powerful Bluetooth party speaker with dynamic bass, LED light show, and multiple connectivity options for an immersive music experience.",
+    category: "Speaker",
+    price: 389.99,
+    rating: { rate: 3.9, count: 80 },
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDM9w66aPHYxzvhxAHkiAG2d4KyvDwmi-t4w&s",
+  },
+  {
+    id: 12,
+    title: "ZenBook 14 OLED",
+    description: "Slim and powerful laptop with a vibrant 2.8K OLED display, Intel Core i7 processor, and long battery life. Ideal for productivity and entertainment.",
+    category: "Laptop",
+    price: 999.99,
+    rating: { rate: 4.6, count: 510 },
+    image: "https://id.store.asus.com/media/catalog/product/z/e/zenbook_14_oled_ux3405ma_product_photo_3b_ponder_blue_05.jpg",
+  },
+  {
+    id: 13,
+    title: "Kieslect L11 Pro",
+    description: "Stylish smartwatch with heart rate monitoring, fitness tracking, and customizable watch faces. Perfect for daily health and lifestyle management.",
+    category: "SmartWatch",
+    price: 89.99,
+    rating: { rate: 4.2, count: 240 },
+    image: "https://rasanasa.com/public/uploads/all/ZatzePcvDHu6KroFaAWPuApxufnKGv2x4ybodLf5.jpg",
+  },
+  {
+    id: 14,
+    title: "Sony WH-1000XM5",
+    description: "Industry-leading noise-canceling headphones with crystal-clear sound, adaptive sound control, and up to 30 hours of battery life.",
+    category: "Headphone",
+    price: 265.99,
+    rating: { rate: 4.8, count: 95 },
+    image: "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1691056487173-headphon2.jpg",
+  },
+  {
+    id: 15,
+    title: "iPhone 11",
+    description: "Classic Apple smartphone with A13 Bionic chip, dual-camera system, and a 6.1-inch Liquid Retina display. A great balance of performance and value.",
+    category: "Phone",
+    price: 239.49,
+    rating: { rate: 4.5, count: 420 },
+    image: "https://i5.walmartimages.com/seo/Restored-iPhone-11-Unlocked-CDMA-GSM-128GB-Purple-Refurbished_70c68bf9-8932-4a08-a4f9-04dbae2eab10.2b46a044e2bd1c9bde25c3562960246c.jpeg",
+  },
+  {
+    id: 16,
+    title: "JBL PartyBox 310",
+    description: "Portable party speaker with 240W of powerful sound, dazzling lights, and a rechargeable battery for non-stop music wherever you go.",
+    category: "Speaker",
+    price: 39.99,
+    rating: { rate: 3.9, count: 80 },
+    image: "https://www.courts.com/media/catalog/product/2/0/2070bb_01_jbl_jblpb310am_jbl_speaker_partybox_310.jpg",
+  },
+  {
+    id: 17,
+    title: "Wireless Headphones",
+    description: "Comfortable over-ear wireless headphones with deep bass, built-in microphone, and long-lasting battery for all-day listening.",
+    category: "Headphone",
+    price: 199.99,
+    rating: { rate: 4.5, count: 120 },
+    image: "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1692947383286-714WUJlhbLS._SL1500_.jpg",
+  },
+  {
+    id: 18,
+    title: "Lenovo ThinkPad T14",
+    description: "Business-grade laptop with AMD Ryzen processor, robust security features, and legendary ThinkPad reliability for professionals on the go.",
+    category: "Laptop",
+    price: 289.99,
+    rating: { rate: 3.5, count: 140 },
+    image: "https://lastbestprice.com/wp-content/uploads/2024/06/ThinkPad-T14-Gen5.png",
+  },
+  {
+    id: 19,
+    title: "Kieslect Kr",
+    description: "Elegant round smartwatch with Bluetooth calling, fitness tracking, and AMOLED display. Combines style and functionality for everyday use.",
+    category: "SmartWatch",
+    price: 59.99,
+    rating: { rate: 4.8, count: 95 },
+    image: "https://www.kieslect.com/wp-content/uploads/2024/01/kieslect-kr-4-1.jpg",
+  },
+  {
+    id: 20,
+    title: "iPhone 16 Pro",
+    description: "Next-gen Apple smartphone with titanium build, advanced triple camera system, A18 chip, and on-device AI features for a seamless experience.",
+    category: "Phone",
+    price: 659.99,
+    rating: { rate: 4.7, count: 760 },
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQbRSovU7j24flAPsLJPTU5J7dkbT6O3mkPNH_B_cJSbBUC5mOndd4_CjuQrGQ4G_pzV8",
+  },
+  {
+    id: 21,
+    title: "iPhone 15",
+    description: "Apple’s powerful smartphone with Dynamic Island, enhanced camera system, A16 Bionic chip, and durable design in beautiful color options.",
+    category: "Phone",
+    price: 959.99,
+    rating: { rate: 4.7, count: 760 },
+    image: "https://www.imagineonline.store/cdn/shop/files/iPhone_15_Pink_PDP_Image_Position-1__en-IN_67590992-2712-461b-b8f6-1c7da8892499.jpg",
+  },
+  {
+    id: 22,
+    title: "HUAWEI MatePad Pro",
+    description: "Sleek and lightweight tablet with a 120Hz display, Snapdragon processor, and multi-window support. Great for productivity and creativity.",
+    category: "Tablet",
+    price: 229.99,
+    rating: { rate: 3.9, count: 80 },
+    image: "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/plp-x/tablets-v5/product-shelf-and-pop-up/view-all/all-matepad-11-5-s.jpg",
+  },
+  {
+    id: 23,
+    title: "SoundCore Us",
+    description: "Premium wireless speaker with 360° sound, waterproof design, and deep bass. Ideal for both indoor and outdoor music lovers.",
+    category: "Speaker",
+    price: 216.99,
+    rating: { rate: 4.2, count: 100 },
+    image: "https://cdn.shopify.com/s/files/1/0516/3761/6830/files/A3138011_TD_01_US_V1_fb494107-00e4-4da2-ad64-4ce94963217a.jpg",
+  },
+  {
+    id: 24,
+    title: "Samsung S23 Ultra",
+    description: "Flagship Samsung phone with an incredible 200MP camera, S Pen support, and Snapdragon 8 Gen 2 for ultra performance and creativity.",
+    category: "Phone",
+    price: 59.99,
+    rating: { rate: 4.0, count: 300 },
+    image: "https://smartaxiata-website-prod-v2.s3.ap-southeast-1.amazonaws.com/Global_version_SM_S918_Galaxy_S23_Ultra_Front_Green_0dfd4cd343.jpg",
+  },
+  {
+    id: 25,
+    title: "Apple Watch Ultra 2",
+    description: "Rugged smartwatch built for adventurers, with advanced fitness tracking, dive features, and a stunning Always-On Retina display.",
+    category: "SmartWatch",
+    price: 89.99,
+    rating: { rate: 4.2, count: 240 },
+    image: "https://istore.co.na/cdn/shop/files/Apple_Watch_Ultra_2_LTE_49mm_Titanium_Blue_Alpine_Loop_PDP_Image_Position-1__WWEN_2048x.jpg",
+  },
+  {
+    id: 26,
+    title: "Beat HeadPhone",
+    description: "Stylish over-ear headphones by Beats with spatial audio, noise cancellation, and bold design. Built for immersive music experiences.",
+    category: "Headphone",
+    price: 165.99,
+    rating: { rate: 4.8, count: 95 },
+    image: "https://www.beatsbydre.com/content/dam/beats/web/product/headphones/studiopro-wireless/plp/plp-studiopro-sandstone.jpg.large.2x.jpg",
+  },
+  {
+    id: 27,
+    title: "MacBook Pro M3",
+    description: "Apple’s most powerful laptop with M3 chip, stunning Liquid Retina XDR display, and up to 22 hours of battery life for creative professionals.",
+    category: "Laptop",
+    price: 989.99,
+    rating: { rate: 4.5, count: 940 },
+    image: "https://www.ione.com.kh/wp-content/uploads/2023/11/1-2.jpg",
+  },
+];
+    const params = new URLSearchParams(window.location.search);
+    const productId = parseInt(params.get("id"));
+
+    class ProductDetail {
+      constructor(product) {
+        this.product = product;
+      }
+
+      renderStars(rating) {
+        const filled = `<svg class="w-5 h-5 text-yellow-400" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.286 3.966c.3.921-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.176 0l-3.385 2.46c-.784.57-1.838-.197-1.54-1.118l1.286-3.966a1 1 0 00-.364-1.118L2.23 9.393c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.966z"/></svg>`;
+        return filled.repeat(Math.round(rating));
+      }
+
+      render() {
+        return `
+        <div class="max-w-6xl mx-auto mt-12">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <!-- Product Image -->
+            <div class="relative group bg-white/70 rounded-3xl shadow-2xl p-8 flex items-center justify-center min-h-[400px]">
+              <img src="${this.product.image}" alt="${this.product.title}" class="w-full max-h-[400px] object-contain rounded-2xl drop-shadow-xl transition-transform duration-500 group-hover:scale-105 bg-white"/>
+              <div class="absolute top-6 left-6">
+                <span class="inline-block px-4 py-2 text-xs font-semibold bg-blue-100 text-blue-700 rounded-full shadow">${this.product.category}</span>
+              </div>
+              <div class="absolute top-6 right-6">
+                <span class="inline-block px-4 py-2 text-xs font-semibold bg-red-100 text-red-600 rounded-full shadow">New</span>
+              </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="relative z-10">
+              <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">${this.product.title}</h1>
+              <div class="flex items-center gap-4 mb-6">
+                <div class="flex items-center">
+                  ${this.renderStars(this.product.rating.rate)}
+                  <span class="ml-2 text-lg font-medium text-gray-900">${this.product.rating.rate.toFixed(1)}</span>
+                </div>
+                <span class="text-gray-600">(${this.product.rating.count} reviews)</span>
+              </div>
+              <div class="flex items-center gap-6 mb-8">
+                <span class="text-4xl font-bold text-blue-600 drop-shadow">$${this.product.price.toFixed(2)}</span>
+                <span class="inline-block px-4 py-2 text-xs font-semibold bg-green-100 text-green-700 rounded-full shadow">In Stock</span>
+              </div>
+              <div class="prose max-w-none mb-8">
+                <h3 class="text-lg font-semibold text-gray-900 mb-3">Description</h3>
+                <p class="text-gray-600 leading-relaxed">${this.product.description}</p>
+              </div>
+              <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                <button id="addToCart" class="flex-1 py-4 px-8 bg-blue-600 text-white rounded-full font-semibold text-lg shadow-lg hover:bg-blue-700 transition-all flex items-center justify-center gap-2">
+                  Add to Cart
+                </button>
+                <button class="flex-1 py-4 px-8 bg-white border border-blue-600 text-blue-600 rounded-full font-semibold text-lg shadow-lg hover:bg-blue-50 transition-all flex items-center justify-center gap-2">
+                  Add to Wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+    }
+
+    const product = products.find(p => p.id === productId);
+
+    if (!product) {
+      document.getElementById("productDetail").innerHTML = "<p class='text-center py-10 text-red-600 font-semibold'>Product not found.</p>";
+    } else {
+      const productDetail = new ProductDetail(product);
+      document.getElementById("productDetail").innerHTML = productDetail.render();
+    }
+  </script>
+</main>
+    <footer class="border-t border-gray-200 bg-[#0C1938]">
+      <div class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">ElectroBay</h3>
+            <p class="text-white">
+              Your one-stop shop for all your needs. Shop smarter with
+              ElectroBay – where convenience meets quality and every need finds
+              a solution.
+            </p>
+            <div class="flex space-x-6 mt-4">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M24 12.073...z" />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.525.02...z" />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2.163...z" />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0C5.373...z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="/" class="text-white hover:text-blue-600">Home</a>
+              </li>
+              <li>
+                <a
+                  href="/src/pages/product.html"
+                  class="text-white hover:text-blue-600"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/src/pages/about"
+                  class="text-white hover:text-blue-600"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/src/pages/contact"
+                  class="text-white hover:text-blue-600"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-white mb-4">Contact Us</h3>
+            <ul class="space-y-2">
+              <li class="text-white hover:underline">
+                Email: info@electrobay.com
+              </li>
+              <li class="text-white hover:underline">Phone: +1 234 567 890</li>
+              <li class="text-white hover:underline">
+                Address: 123 Store Street
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-white mb-4">Newsletter</h3>
+            <p class="text-white mb-4">
+              Subscribe to our newsletter for updates.
+            </p>
+            <form class="flex gap-2">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="flex-1 px-2 text-[14px] py-2 rounded-lg bg-gray-100 text-gray-900"
+              />
+              <button
+                type="submit"
+                class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="mt-8 pt-8 border-t border-gray-200 text-center text-white">
+          <p>&copy; 2025 ElectroBay. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="/src/js/header.js"></script>
+</body>
+</html>
