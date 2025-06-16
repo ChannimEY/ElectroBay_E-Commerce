@@ -1,14 +1,4 @@
-// import { CartManager } from './cartManage.js';
 
-// export function updateCartCount() {
-//   const badge = document.querySelector('#cartCount');
-//   if (badge) {
-//     badge.textContent = CartManager.getCartCount();
-//   }
-// }
-
-// // Run when page loads
-// document.addEventListener('DOMContentLoaded', updateCartCount);
 
 function renderHeader() {
   const headerHTML = `
