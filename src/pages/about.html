@@ -43,7 +43,7 @@
       name="twitter:image"
       content="https://www.randrmagonline.com/ext/resources/2021/03/30/1-RR0421-Cline-high-performing-team-members-1170x878.jpg?height=635&t=1619210425&width=1200"
     />
-/header>
+
 
     <!-- Favicon -->
     <link
@@ -77,9 +77,9 @@
 
     <!-- Desktop Menu -->
     <div class="hidden md:flex space-x-6">
-      <a href="/index.html" class="text-gray-700 font-medium hover:text-orange-500">Home</a>
+      <a href="/index.html" class="text-blue-700 font-bold hover:text-orange-500">Home</a>
       <a href="/src/pages/product.html" class="text-gray-700 hover:text-orange-500 font-medium">Products</a>
-      <a href="/src/pages/about.html" class="text-blue-700 hover:text-orange-500 font-bold">About</a>
+      <a href="/src/pages/about.html" class="text-gray-700 hover:text-orange-500 font-medium">About</a>
       <a href="/src/pages/contact.html" class="text-gray-700 hover:text-orange-500 font-medium">Contact</a>
     </div>
 
@@ -143,7 +143,7 @@
   <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
     <a href="/index.html" class="block py-2 text-gray-700 hover:text-orange-500 font-medium">Home</a>
     <a href="/src/pages/product.html" class="block py-2 text-gray-700 hover:text-orange-500 font-medium">Products</a>
-    <a href="/src/pages/about.html" class="block py-2 text-blue-700 hover:text-orange-500 font-bold">About</a>
+    <a href="/src/pages/about.html" class="block py-2 text-gray-700 hover:text-orange-500 font-medium">About</a>
     <a href="/src/pages/contact.html" class="block py-2 text-gray-700 hover:text-orange-500 font-medium">Contact</a>
   </div>
 </header>
@@ -392,16 +392,21 @@
     </main>
     <footer class="border-t border-gray-200 bg-[#0C1938]">
       <div class="container mx-auto px-4 py-8">
+
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-8"
         >
           <div>
-            <h3 class="text-xl font-bold text-white mb-4">ElectroBay</h3>
+            <div class="flex mb-4">
+              <img src="/src/assets/taplogo.png" class="w-12 h-12 object-contain" alt="logo">
+            <h3 class="text-2xl font-bold text-white px-4 mt-3 ">ElectroBay</h3>
+            </div>
             <p class="text-white">
               Your one-stop shop for all your needs. Shop smarter with
               ElectroBay – where convenience meets quality and every need finds
               a solution.
             </p>
+            <p class="text-white font-bold text-xl mt-4">- EY Channim</p>
             <div class="flex space-x-6 mt-4">
               <a
                 href="#"
@@ -442,26 +447,26 @@
             <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
             <ul class="space-y-2">
               <li>
-                <a href="/" class="text-white hover:text-blue-600">Home</a>
+                <a href="/" class="text-white hover:text-orange-500">Home</a>
               </li>
               <li>
                 <a
                   href="/src/pages/product.html"
-                  class="text-white hover:text-blue-600"
+                  class="text-white hover:text-orange-500"
                   >Products</a
                 >
               </li>
               <li>
                 <a
                   href="/src/pages/about"
-                  class="text-white hover:text-blue-600"
+                  class="text-white hover:text-orange-500"
                   >About</a
                 >
               </li>
               <li>
                 <a
                   href="/src/pages/contact"
-                  class="text-white hover:text-blue-600"
+                  class="text-white hover:text-orange-500"
                   >Contact</a
                 >
               </li>
@@ -508,5 +513,6 @@
       </div>
     </footer>
     <script src="/src/js/header.js"></script>
+    <script src="/src/js/cart.js"></script>
   </body>
 </html>

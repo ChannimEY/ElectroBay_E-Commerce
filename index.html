@@ -395,7 +395,7 @@
         </div>
       </section>
       <!-- Featured Products Section -->
-      <section class="py-20 bg-gray-50 dark:bg-gray-900 animate-on-scroll">
+      <section class="py-20 bg-gray-50 animate-on-scroll">
         <div class="container mx-auto px-4">
           <div class="flex items-center justify-between mb-12">
             <div>
@@ -844,16 +844,21 @@
     </main>
     <footer class="border-t border-gray-200 bg-[#0C1938]">
       <div class="container mx-auto px-4 py-8">
+
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-8"
         >
           <div>
-            <h3 class="text-xl font-bold text-white mb-4">ElectroBay</h3>
+            <div class="flex mb-4">
+              <img src="/src/assets/taplogo.png" class="w-12 h-12 object-contain" alt="logo">
+            <h3 class="text-2xl font-bold text-white px-4 mt-3 ">ElectroBay</h3>
+            </div>
             <p class="text-white">
               Your one-stop shop for all your needs. Shop smarter with
               ElectroBay – where convenience meets quality and every need finds
               a solution.
             </p>
+            <p class="text-white font-bold text-xl mt-4">- EY Channim</p>
             <div class="flex space-x-6 mt-4">
               <a
                 href="#"
@@ -961,7 +966,7 @@
     </footer>
     <script src="/src/js/cart.js" defer></script>
     <script src="/src/js/time.js"></script>
-    
+
     <script>
       function renderStars(rating) {
         const fullStars = Math.floor(rating);
