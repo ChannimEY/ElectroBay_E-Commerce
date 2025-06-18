@@ -1,46 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ElectroBay - Your One-Stop Shop for Electronics</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home | ElectroBay</title>
+    <!-- SEO Meta -->
+    <meta
+      name="description"
+      content="ElectroBay is your one-stop shop for the latest phones, laptops, tablets, headphones, smartwatches, and speakers. Shop top electronic brands with exclusive June discounts!"
+    />
+    <meta
+      name="keywords"
+      content="ElectroBay, electronics, phones, smartphones, laptops, headphones, tablets, speakers, tech store"
+    />
+    <meta name="author" content="EY Channim" />
 
-  <!-- SEO Meta -->
-  <meta name="description" content="ElectroBay is your one-stop shop for the latest phones, laptops, tablets, headphones, smartwatches, and speakers. Shop top electronic brands with exclusive June discounts!" />
-  <meta name="keywords" content="ElectroBay, electronics, phones, smartphones, laptops, headphones, tablets, speakers, tech store" />
-  <meta name="author" content="EY Channim" />
+    <!-- Open Graph Meta (Facebook, LinkedIn, etc.) -->
+    <meta
+      property="og:title"
+      content="ElectroBay - Your One-Stop Shop for Electronics"
+    />
+    <meta
+      property="og:description"
+      content="Discover premium electronics at ElectroBay: phones, laptops, headphones, tablets, and more."
+    />
+    <meta
+      property="og:image"
+      content="https://www.shutterstock.com/image-vector/online-electronics-shopping-delivery-banner-260nw-2282200763.jpg"
+    />
+    <meta property="og:url" content="https://yourdomain.com" />
+    <meta property="og:type" content="website" />
 
-  <!-- Open Graph Meta (Facebook, LinkedIn, etc.) -->
-  <meta property="og:title" content="ElectroBay - Your One-Stop Shop for Electronics" />
-  <meta property="og:description" content="Discover premium electronics at ElectroBay: phones, laptops, headphones, tablets, and more." />
-  <meta property="og:image" content="https://c8.alamy.com/comp/2PHMT5M/online-electronics-shopping-and-delivery-banner-with-devices-and-shopping-basket-2PHMT5M.jpg" />
-  <meta property="og:url" content="https://yourdomain.com" />
-  <meta property="og:type" content="website" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="ElectroBay - Your One-Stop Shop for Electronics"
+    />
+    <meta
+      name="twitter:description"
+      content="Shop phones, laptops, tablets, and more at ElectroBay with amazing June deals!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.shutterstock.com/image-vector/online-electronics-shopping-delivery-banner-260nw-2282200763.jpg"
+    />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="ElectroBay - Your One-Stop Shop for Electronics" />
-  <meta name="twitter:description" content="Shop phones, laptops, tablets, and more at ElectroBay with amazing June deals!" />
-  <meta name="twitter:image" content="https://c8.alamy.com/comp/2PHMT5M/online-electronics-shopping-and-delivery-banner-with-devices-and-shopping-basket-2PHMT5M.jpg" />
-
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="src/output.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="/src/assets/taplogo.png" type="image/x-icon" />
-</head>
-
+    <link
+      rel="shortcut icon"
+      href="/src/assets/taplogo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/src/output.css" />
+  </head>
   <body>
+<header class="sticky top-0 z-50 bg-white shadow border-b border-gray-200 backdrop-blur-sm">
+  <!-- Top Bar -->
+  <div class="w-full bg-gradient-to-r from-blue-800 via-purple-700 to-red-600 py-2 flex items-center justify-center px-4">
+    <span class="text-white text-sm font-medium">
+      30% discount on all products special for June!
+    </span>
+  </div>
 
+  <!-- Navigation Bar -->
+  <nav class="max-w-8xl mx-auto px-4 py-4 flex items-center justify-between">
+    <!-- Logo -->
+    <div class="flex items-center space-x-2">
+      <a href="/index.html">
+        <img src="/src/assets/taplogo.png" alt="logo" class="w-8 h-8 object-cover rounded-lg" />
+      </a>
+      <h1 class="text-xl font-bold text-gray-900">ElectroBay</h1>
+    </div>
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex space-x-6">
+      <a href="/index.html" class="text-blue-700 font-bold hover:text-orange-500">Home</a>
+      <a href="/src/pages/product.html" class="text-gray-700 hover:text-orange-500 font-medium">Products</a>
+      <a href="/src/pages/about.html" class="text-gray-700 hover:text-orange-500 font-medium">About</a>
+      <a href="/src/pages/contact.html" class="text-gray-700 hover:text-orange-500 font-medium">Contact</a>
+    </div>
+
+    <!-- Right Side -->
+    <div class="flex items-center space-x-4">
+      <!-- Search Bar -->
+      <div class="hidden lg:block relative">
+        <input
+          type="text"
+          placeholder="Search products..."
+          class="w-64 px-4 py-2 rounded-full bg-gray-100 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <button class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-blue-500">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Cart -->
+      <a href="/src/shopping.html" class="relative p-2 rounded-full bg-gray-100 hover:bg-gray-200">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+        </svg>
+        <span id="cart-count"
+          class="absolute -top-1 -right-1 w-4 h-4 text-xs bg-red-500 text-white rounded-full flex items-center justify-center">0</span>
+      </a>
+
+      <!-- User Dropdown -->
+      <div class="relative">
+        <button id="user-menu-button"
+          class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 focus:outline-none">
+          <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+          </svg>
+        </button>
+        <div id="user-dropdown"
+          class="hidden absolute right-0 mt-2 w-32 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
+          <a href="./src/login.html"
+            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Login</a>
+          <a href="/src/signup.html"
+            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign Up</a>
+        </div>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <button id="mobile-toggle" class="md:hidden p-2 bg-gray-100 hover:bg-gray-200 rounded-full">
+        <svg class="w-5 h-5 mb-1 text-gray-700" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd"
+            d="M3 5h14a1 1 0 010 2H3a1 1 0 010-2zm0 6h14a1 1 0 010 2H3a1 1 0 010-2zm0 6h14a1 1 0 010 2H3a1 1 0 010-2z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+    <a href="/index.html" class="block py-2 text-gray-700 hover:text-orange-500 font-medium">Home</a>
+    <a href="/src/pages/product.html" class="block py-2 text-gray-700 hover:text-orange-500 font-medium">Products</a>
+    <a href="/src/pages/about.html" class="block py-2 text-gray-700 hover:text-orange-500 font-medium">About</a>
+    <a href="/src/pages/contact.html" class="block py-2 text-gray-700 hover:text-orange-500 font-medium">Contact</a>
+  </div>
+</header>
 
     <main>
+      <div
+        id="toast"
+        class="fixed top-5 right-14 z-99 max-w-xs w-full bg-green-500 text-white px-4 py-3 rounded shadow-lg opacity-0 pointer-events-none transition-opacity duration-300"
+      ></div>
+
       <!-- Featured Categories Section -->
       <section class="py-20 bg-white animate-on-scroll">
         <div class="container mx-auto px-4">
@@ -285,18 +395,20 @@
         </div>
       </section>
       <!-- Featured Products Section -->
-      <section class="py-20 bg-gray-50 animate-on-scroll">
+      <section class="py-20 bg-gray-50 dark:bg-gray-900 animate-on-scroll">
         <div class="container mx-auto px-4">
           <div class="flex items-center justify-between mb-12">
             <div>
-              <h2 class="text-4xl font-bold text-gray-900 mb-4">
+              <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
                 Featured Products
               </h2>
-              <p class="text-lg text-gray-600">Handpicked products for you</p>
+              <p class="text-lg text-gray-600 dark:text-gray-400">
+                Handpicked products for you
+              </p>
             </div>
             <a
-              href="/src/pages/product.html"
-              class="inline-flex items-center text-primary-600 hover:underline"
+              href="/products"
+              class="inline-flex items-center text-primary-600 dark:text-primary-400 hover:underline"
             >
               View All
               <svg
@@ -314,313 +426,69 @@
               </svg>
             </a>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div
-              class="group relative bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden block"
-            >
-              <div class="aspect-square overflow-hidden bg-white relative">
-                <img
-                  src="https://www.ione.com.kh/wp-content/uploads/2023/11/1-2.jpg"
-                  alt="${
-        product.title
-      }"
-                  class="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500"
-                  loading="lazy"
-                />
-                <div class="absolute top-4 left-4">
-                  <span
-                    class="inline-block px-3 py-1.5 text-xs font-medium bg-white/90 backdrop-blur-sm text-primary-600 rounded-full shadow-sm"
-                  >
-                    Laptop
-                  </span>
-                </div>
-              </div>
-              <div class="p-6">
-                <h2
-                  class="text-gray-900 font-bold mb-3 line-clamp-2 group-hover:text-primary-500 transition-colors"
-                >
-                  MacBook Pro 14-inch M3
-                </h2>
-                <div class="flex items-center mb-4">
-                  <div class="flex items-center">
-                    ⭐⭐⭐⭐⭐
-                    <span class="ml-2 text-sm text-gray-600"> (364) </span>
-                  </div>
-                </div>
-                <div class="flex items-center justify-between">
-                  <span class="text-2xl font-bold text-primary-600">
-                    $1699
-                  </span>
-                  <button
-                    id="addToCart"
-                    class="add-to-cart-btn w-10 h-10 rounded-full bg-orange-500 hover:bg-primary-500 text-white shadow-md flex items-center justify-center transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
-                    data-product-id="${product.id}"
-                    onclick="event.preventDefault(); event.stopPropagation();"
-                  >
-                    <!-- cart icon -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              ></div>
-            </div>
-            <div
-              class="group relative bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden block"
-            >
-              <div class="aspect-square overflow-hidden bg-white relative">
-                <img
-                  src="https://mac-center.com/cdn/shop/files/IMG-14858841.jpg?v=1726245810&width=823"
-                  alt="${
-        product.title
-      }"
-                  class="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500"
-                  loading="lazy"
-                />
-                <div class="absolute top-4 left-4">
-                  <span
-                    class="inline-block px-3 py-1.5 text-xs font-medium bg-white/90 backdrop-blur-sm text-primary-600 rounded-full shadow-sm"
-                  >
-                   Phone
-                  </span>
-                </div>
-              </div>
-              <div class="p-6">
-                <h2
-                  class="text-gray-900 font-bold mb-3 line-clamp-2 group-hover:text-primary-500 transition-colors"
-                >
-                  iPhone 16
-                </h2>
-                <div class="flex items-center mb-4">
-                  <div class="flex items-center">
-                    ⭐⭐⭐⭐⭐
-                    <span class="ml-2 text-sm text-gray-600"> (364) </span>
-                  </div>
-                </div>
-                <div class="flex items-center justify-between">
-                  <span class="text-2xl font-bold text-primary-600">
-                    $739
-                  </span>
-                  <button
-                    id="addToCart"
-                    class="add-to-cart-btn w-10 h-10 rounded-full bg-orange-500 hover:bg-primary-500 text-white shadow-md flex items-center justify-center transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
-                    data-product-id="${product.id}"
-                    onclick="event.preventDefault(); event.stopPropagation();"
-                  >
-                    <!-- cart icon -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              ></div>
-            </div>
-            <div
-              class="group relative bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden block"
-            >
-              <div class="aspect-square overflow-hidden bg-white relative">
-                <img
-                  src="https://ik.imagekit.io/groove/tr:w-453,e-sharpen-1/images/block/productVariants/424/ProductImageList/thumbnail/0891ab563b8bed3d17dd0ec62d1a30e3.jpg"
-                  alt="${
-        product.title
-      }"
-                  class="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500"
-                  loading="lazy"
-                />
-                <div class="absolute top-4 left-4">
-                  <span
-                    class="inline-block px-3 py-1.5 text-xs font-medium bg-white/90 backdrop-blur-sm text-primary-600 rounded-full shadow-sm"
-                  >
-                    HeadPhone
-                  </span>
-                </div>
-              </div>
-              <div class="p-6">
-                <h2
-                  class="text-gray-900 font-bold mb-3 line-clamp-2 group-hover:text-primary-500 transition-colors"
-                >
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-8"
+            id="product-list"
+          ></div>
+        </div>
+      </section>
 
-                Wireless HeadPhone
-                </h2>
-                <div class="flex items-center mb-4">
-                  <div class="flex items-center">
-                    ⭐⭐⭐⭐⭐
-                    <span class="ml-2 text-sm text-gray-600"> (364) </span>
-                  </div>
-                </div>
-                <div class="flex items-center justify-between">
-                  <span class="text-2xl font-bold text-primary-600">
-                    $239
-                  </span>
-                  <button
-                    id="addToCart"
-                    class="add-to-cart-btn w-10 h-10 rounded-full bg-orange-500 hover:bg-primary-500 text-white shadow-md flex items-center justify-center transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
-                    data-product-id="${product.id}"
-                    onclick="event.preventDefault(); event.stopPropagation();"
-                  >
-                    <!-- cart icon -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                      />
-                    </svg>
-                  </button>
-                </div>
+      <!-- Special Offers Section -->
+      <section class="px-3 py-10">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">
+          Special Offer Sale
+        </h2>
+        <div
+          class="max-w-8xl mx-auto bg-gradient-to-r from-purple-500 to-blue-500 text-white p-8 rounded-2xl flex flex-col-reverse md:flex-row items-center justify-between gap-6 shadow-lg"
+        >
+          <!-- Left Content -->
+          <div class="w-full md:w-1/2 space-y-5">
+            <h2 class="text-3xl md:text-4xl font-bold">Mania Sale</h2>
+            <p class="text-sm md:text-base">
+              Opportunity to snag discounts on your preferred MacBook. Hurry,
+              limited time offer!
+            </p>
+
+            <!-- Countdown Timer -->
+
+            <div class="flex gap-4" id="countdown">
+              <div
+                class="bg-white text-gray-900 px-5 py-3 rounded-full text-center"
+              >
+                <div class="text-2xl font-bold" id="hours">00</div>
+                <div class="text-xs uppercase font-medium">Hours</div>
               </div>
               <div
-                class="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              ></div>
+                class="bg-white text-gray-900 px-6 py-3 rounded-full text-center"
+              >
+                <div class="text-2xl font-bold" id="minutes">00</div>
+                <div class="text-xs uppercase font-medium">Mins</div>
+              </div>
+              <div
+                class="bg-white text-gray-900 px-6 py-3 rounded-full text-center"
+              >
+                <div class="text-2xl font-bold" id="seconds">00</div>
+                <div class="text-xs uppercase font-medium">Secs</div>
+              </div>
             </div>
-            <div
-              class="group relative bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden block"
+
+            <button
+              class="mt-4 bg-purple-700 hover:bg-purple-800 text-white font-semibold px-6 py-2 rounded-md transition"
             >
-              <div class="aspect-square overflow-hidden bg-white relative">
-                <img
-                  src="https://images-cdn.ubuy.co.in/633b12488d2edc65997f4c20-smart-watch-bluetooth-smartwatch-touch.jpg"
-                  alt="${
-        product.title
-      }"
-                  class="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500"
-                  loading="lazy"
-                />
-                <div class="absolute top-4 left-4">
-                  <span
-                    class="inline-block px-3 py-1.5 text-xs font-medium bg-white/90 backdrop-blur-sm text-primary-600 rounded-full shadow-sm"
-                  >
-                    Smartwatch
-                  </span>
-                </div>
-              </div>
-              <div class="p-6">
-                <h2
-                  class="text-gray-900 font-bold mb-3 line-clamp-2 group-hover:text-primary-500 transition-colors"
-                >
-                  Sport Fitness
-                </h2>
-                <div class="flex items-center mb-4">
-                  <div class="flex items-center">
-                    ⭐⭐⭐⭐⭐
-                    <span class="ml-2 text-sm text-gray-600"> (264) </span>
-                  </div>
-                </div>
-                <div class="flex items-center justify-between">
-                  <span class="text-2xl font-bold text-primary-600">
-                    $199
-                  </span>
-                  <button
-                    id="addToCart"
-                    class="add-to-cart-btn w-10 h-10 rounded-full bg-orange-500 hover:bg-primary-500 text-white shadow-md flex items-center justify-center transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
-                    data-product-id="${product.id}"
-                    onclick="event.preventDefault(); event.stopPropagation();"
-                  >
-                    <!-- cart icon -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              ></div>
-            </div>
+              Shop Now
+            </button>
+          </div>
+
+          <!-- Right Image -->
+          <div class="w-full md:w-1/2">
+            <img
+              class="w-full max-w-md mx-auto object-contain"
+              src="https://www.edustore.de/wp-content/uploads/MacBook-Air-M4-15-TeacherStore.png"
+              alt="MacBook"
+            />
           </div>
         </div>
       </section>
-<!-- Special Offers Section -->
-<section class="px-3 py-10">
-  <div
-    class="max-w-8xl mx-auto bg-gradient-to-r from-purple-500 to-blue-500 text-white p-8 rounded-2xl flex flex-col-reverse md:flex-row items-center justify-between gap-6 shadow-lg"
-  >
-    <!-- Left Content -->
-    <div class="w-full md:w-1/2 space-y-5">
-      <h2 class="text-3xl md:text-4xl font-bold">Mania Sale</h2>
-      <p class="text-sm md:text-base">
-        Opportunity to snag discounts on your preferred MacBook. Hurry,
-        limited time offer!
-      </p>
-
-      <!-- Countdown Timer -->
-      <div class="flex gap-4" id="countdown">
-        <div class="bg-white text-gray-900 px-5 py-3 rounded-full text-center">
-          <div class="text-2xl font-bold" id="hours">00</div>
-          <div class="text-xs uppercase font-medium">Hours</div>
-        </div>
-        <div class="bg-white text-gray-900 px-6 py-3 rounded-full text-center">
-          <div class="text-2xl font-bold" id="minutes">00</div>
-          <div class="text-xs uppercase font-medium">Mins</div>
-        </div>
-        <div class="bg-white text-gray-900 px-6 py-3 rounded-full text-center">
-          <div class="text-2xl font-bold" id="seconds">00</div>
-          <div class="text-xs uppercase font-medium">Secs</div>
-        </div>
-      </div>
-
-      <button
-        class="mt-4 bg-purple-700 hover:bg-purple-800 text-white font-semibold px-6 py-2 rounded-md transition"
-      >
-        Shop Now
-      </button>
-    </div>
-
-    <!-- Right Image -->
-    <div class="w-full md:w-1/2">
-      <img
-        class="w-full max-w-md mx-auto object-contain"
-        src="https://www.edustore.de/wp-content/uploads/MacBook-Air-M4-15-TeacherStore.png"
-        alt="MacBook"
-      />
-    </div>
-  </div>
-</section>
 
       <!-- Customer say Section -->
       <section class="py-20 bg-gray-50 animate-on-scroll">
@@ -771,82 +639,90 @@
         </div>
       </section>
 
-<!-- Recent News Section -->
-<section class="py-20 bg-white animate-on-scroll">
-  <div class="container mx-auto px-4">
-    <div class="text-center mb-12">
-      <h2 class="text-4xl font-bold text-gray-900 mb-4">Recent News</h2>
-      <p class="text-lg text-gray-600">
-        Stay updated with the latest trends and innovations in electronics, smart devices, and digital lifestyle.
-      </p>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-
-      <!-- News Card 1 -->
-      <div class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col animate-on-scroll transition-transform duration-500 hover:scale-105">
-        <img
-          src="https://files.tecnoblog.net/wp-content/uploads/2023/09/apple-watch-series-9-e-apple-watch-ultra-2-thassius-veloso-destaque-1536x864.jpg"
-          alt="Smartwatch"
-          class="w-full h-64 object-cover object-center mb-6"
-        />
-        <div class="px-8 pb-8 flex-1 flex flex-col">
-          <div class="text-gray-500 text-sm mb-2">
-            June 5, 2025 &bull; by TechNews Daily
+      <!-- Recent News Section -->
+      <section class="py-20 bg-white animate-on-scroll">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Recent News</h2>
+            <p class="text-lg text-gray-600">
+              Stay updated with the latest trends and innovations in
+              electronics, smart devices, and digital lifestyle.
+            </p>
           </div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-2">
-            Smartwatches Are Evolving Faster Than Ever
-          </h3>
-          <p class="text-gray-600 mb-4 flex-1">
-            Discover how the latest smartwatches are not just for fitness — they’re transforming health tracking, productivity, and even payments.
-          </p>
-        </div>
-      </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- News Card 1 -->
+            <div
+              class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col animate-on-scroll transition-transform duration-500 hover:scale-105"
+            >
+              <img
+                src="https://files.tecnoblog.net/wp-content/uploads/2023/09/apple-watch-series-9-e-apple-watch-ultra-2-thassius-veloso-destaque-1536x864.jpg"
+                alt="Smartwatch"
+                class="w-full h-64 object-cover object-center mb-6"
+              />
+              <div class="px-8 pb-8 flex-1 flex flex-col">
+                <div class="text-gray-500 text-sm mb-2">
+                  June 5, 2025 &bull; by TechNews Daily
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                  Smartwatches Are Evolving Faster Than Ever
+                </h3>
+                <p class="text-gray-600 mb-4 flex-1">
+                  Discover how the latest smartwatches are not just for fitness
+                  — they’re transforming health tracking, productivity, and even
+                  payments.
+                </p>
+              </div>
+            </div>
 
-      <!-- News Card 2 -->
-      <div class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col animate-on-scroll transition-transform duration-500 hover:scale-105">
-        <img
-          src="https://www.usatoday.com/gcdn/authoring/authoring-images/2025/01/14/USAT/77696047007-20250106-t-205428-z-586253738-rc-2-k-4-ca-65-g-58-rtrmadp-3-techces-1.JPG?crop=5333,3999,x300,y0"
-          alt="Laptop"
-          class="w-full h-64 object-cover object-center mb-6"
-        />
-        <div class="px-8 pb-8 flex-1 flex flex-col">
-          <div class="text-gray-500 text-sm mb-2">
-            May 20, 2025 &bull; by Gadget Insider
+            <!-- News Card 2 -->
+            <div
+              class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col animate-on-scroll transition-transform duration-500 hover:scale-105"
+            >
+              <img
+                src="https://www.usatoday.com/gcdn/authoring/authoring-images/2025/01/14/USAT/77696047007-20250106-t-205428-z-586253738-rc-2-k-4-ca-65-g-58-rtrmadp-3-techces-1.JPG?crop=5333,3999,x300,y0"
+                alt="Laptop"
+                class="w-full h-64 object-cover object-center mb-6"
+              />
+              <div class="px-8 pb-8 flex-1 flex flex-col">
+                <div class="text-gray-500 text-sm mb-2">
+                  May 20, 2025 &bull; by Gadget Insider
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                  Must-Have Accessories for Your Tech Setup
+                </h3>
+                <p class="text-gray-600 mb-4 flex-1">
+                  From wireless chargers to ergonomic stands, explore the top
+                  accessories to boost your workspace efficiency and comfort.
+                </p>
+              </div>
+            </div>
+
+            <!-- News Card 3 -->
+            <div
+              class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col animate-on-scroll transition-transform duration-500 hover:scale-105"
+            >
+              <img
+                src="https://havitsmart.com/cdn/shop/files/DSC06972.jpg?v=1744700700"
+                alt="VR Headset"
+                class="w-full h-64 object-cover object-center mb-6"
+              />
+              <div class="px-8 pb-8 flex-1 flex flex-col">
+                <div class="text-gray-500 text-sm mb-2">
+                  April 28, 2025 &bull; by FutureTech Weekly
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                  Is VR the Future of Home Entertainment?
+                </h3>
+                <p class="text-gray-600 mb-4 flex-1">
+                  Virtual reality is reshaping the way we experience games,
+                  movies, and learning. See what's next in immersive technology.
+                </p>
+              </div>
+            </div>
           </div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-2">
-            Must-Have Accessories for Your Tech Setup
-          </h3>
-          <p class="text-gray-600 mb-4 flex-1">
-            From wireless chargers to ergonomic stands, explore the top accessories to boost your workspace efficiency and comfort.
-          </p>
         </div>
-      </div>
-
-      <!-- News Card 3 -->
-      <div class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col animate-on-scroll transition-transform duration-500 hover:scale-105">
-        <img
-          src="https://havitsmart.com/cdn/shop/files/DSC06972.jpg?v=1744700700"
-          alt="VR Headset"
-          class="w-full h-64 object-cover object-center mb-6"
-        />
-        <div class="px-8 pb-8 flex-1 flex flex-col">
-          <div class="text-gray-500 text-sm mb-2">
-            April 28, 2025 &bull; by FutureTech Weekly
-          </div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-2">
-            Is VR the Future of Home Entertainment?
-          </h3>
-          <p class="text-gray-600 mb-4 flex-1">
-            Virtual reality is reshaping the way we experience games, movies, and learning. See what's next in immersive technology.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-      <!-- Why Choose Us Section -->
+      </section>
+      <!-- Why Choos us -->
       <section class="py-20 bg-white animate-on-scroll">
         <div class="container mx-auto px-4">
           <div class="text-center mb-16">
@@ -857,7 +733,7 @@
           </div>
           <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div
-              class="text-center p-6 rounded-2xl bg-gray-50 hover:shadow-lg transition-all duration-300"
+              class="text-center p-6 rounded-2xl bg-gray-200 hover:shadow-lg transition-all duration-300"
             >
               <div
                 class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"
@@ -884,7 +760,7 @@
               </p>
             </div>
             <div
-              class="text-center p-6 rounded-2xl bg-gray-50 hover:shadow-lg transition-all duration-300"
+              class="text-center p-6 rounded-2xl bg-gray-200 hover:shadow-lg transition-all duration-300"
             >
               <div
                 class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"
@@ -911,7 +787,7 @@
               </p>
             </div>
             <div
-              class="text-center p-6 rounded-2xl bg-gray-50 hover:shadow-lg transition-all duration-300"
+              class="text-center p-6 rounded-2xl bg-gray-200 hover:shadow-lg transition-all duration-300"
             >
               <div
                 class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"
@@ -938,7 +814,7 @@
               </p>
             </div>
             <div
-              class="text-center p-6 rounded-2xl bg-gray-50 hover:shadow-lg transition-all duration-300"
+              class="text-center p-6 rounded-2xl bg-gray-200 hover:shadow-lg transition-all duration-300"
             >
               <div
                 class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"
@@ -968,7 +844,9 @@
     </main>
     <footer class="border-t border-gray-200 bg-[#0C1938]">
       <div class="container mx-auto px-4 py-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-8">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-8"
+        >
           <div>
             <h3 class="text-xl font-bold text-white mb-4">ElectroBay</h3>
             <p class="text-white">
@@ -1016,26 +894,26 @@
             <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
             <ul class="space-y-2">
               <li>
-                <a href="/" class="text-white hover:text-blue-600">Home</a>
+                <a href="/" class="text-white hover:text-orange-500">Home</a>
               </li>
               <li>
                 <a
                   href="/src/pages/product.html"
-                  class="text-white hover:text-blue-600"
+                  class="text-white hover:text-orange-500"
                   >Products</a
                 >
               </li>
               <li>
                 <a
                   href="/src/pages/about"
-                  class="text-white hover:text-blue-600"
+                  class="text-white hover:text-orange-500"
                   >About</a
                 >
               </li>
               <li>
                 <a
                   href="/src/pages/contact"
-                  class="text-white hover:text-blue-600"
+                  class="text-white hover:text-orange-500"
                   >Contact</a
                 >
               </li>
@@ -1081,8 +959,186 @@
         </div>
       </div>
     </footer>
-
-    <script src="/src/js/header.js"></script>
+    <script src="/src/js/cart.js" defer></script>
     <script src="/src/js/time.js"></script>
+    
+    <script>
+      function renderStars(rating) {
+        const fullStars = Math.floor(rating);
+        const halfStar = rating % 1 >= 0.5;
+        let starsHtml = "";
+
+        for (let i = 0; i < fullStars; i++) {
+          starsHtml +=
+            '<svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927C9.34 2.21 10.66 2.21 10.951 2.927l1.363 3.51a1 1 0 00.95.69h3.786c.969 0 1.371 1.24.588 1.81l-3.067 2.223a1 1 0 00-.364 1.118l1.364 3.51c.29.717-.755 1.31-1.538.74L10 13.347l-3.073 2.181c-.783.57-1.828-.023-1.538-.74l1.364-3.51a1 1 0 00-.364-1.118L3.322 8.937c-.783-.57-.38-1.81.588-1.81h3.786a1 1 0 00.95-.69l1.403-3.51z"/></svg>';
+        }
+
+        if (halfStar) {
+          starsHtml +=
+            '<svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09L5.5 12.68.878 8.91l6.215-.902L10 2.5V15z"/></svg>';
+        }
+
+        return starsHtml;
+      }
+
+      const products = [
+
+  {
+    id: 19,
+    title: "Kieslect Kr",
+    description:
+      "Elegant round smartwatch with Bluetooth calling, fitness tracking, and AMOLED display. Combines style and functionality for everyday use.",
+    category: "SmartWatch",
+    price: 59.99,
+    rating: { rate: 4.8, count: 95 },
+    image:
+      "https://www.kieslect.com/wp-content/uploads/2024/01/kieslect-kr-4-1.jpg",
+  },  {
+    id: 20,
+    title: "MacBook Pro M3",
+    description:
+      "Apple’s most powerful laptop with M3 chip, stunning Liquid Retina XDR display, and up to 22 hours of battery life for creative professionals.",
+    category: "Laptop",
+    price: 989.99,
+    rating: { rate: 4.5, count: 940 },
+    image: "https://www.ione.com.kh/wp-content/uploads/2023/11/1-2.jpg",
+  },
+
+  {
+    id: 21,
+    title: "iPhone 15",
+    description:
+      "Apple’s powerful smartphone with Dynamic Island, enhanced camera system, A16 Bionic chip, and durable design in beautiful color options.",
+    category: "Phone",
+    price: 959.99,
+    rating: { rate: 4.7, count: 760 },
+    image:
+      "https://www.imagineonline.store/cdn/shop/files/iPhone_15_Pink_PDP_Image_Position-1__en-IN_67590992-2712-461b-b8f6-1c7da8892499.jpg",
+  },
+  {
+    id: 22,
+    title: "HUAWEI MatePad Pro",
+    description:
+      "Sleek and lightweight tablet with a 120Hz display, Snapdragon processor, and multi-window support. Great for productivity and creativity.",
+    category: "Tablet",
+    price: 229.99,
+    rating: { rate: 3.9, count: 80 },
+    image:
+      "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/plp-x/tablets-v5/product-shelf-and-pop-up/view-all/all-matepad-11-5-s.jpg",
+  },
+  {
+    id: 23,
+    title: "SoundCore Us",
+    description:
+      "Premium wireless speaker with 360° sound, waterproof design, and deep bass. Ideal for both indoor and outdoor music lovers.",
+    category: "Speaker",
+    price: 216.99,
+    rating: { rate: 4.2, count: 100 },
+    image:
+      "https://cdn.shopify.com/s/files/1/0516/3761/6830/files/A3138011_TD_01_US_V1_fb494107-00e4-4da2-ad64-4ce94963217a.jpg",
+  },
+  {
+    id: 24,
+    title: "Samsung S23 Ultra",
+    description:
+      "Flagship Samsung phone with an incredible 200MP camera, S Pen support, and Snapdragon 8 Gen 2 for ultra performance and creativity.",
+    category: "Phone",
+    price: 59.99,
+    rating: { rate: 4.0, count: 300 },
+    image:
+      "https://smartaxiata-website-prod-v2.s3.ap-southeast-1.amazonaws.com/Global_version_SM_S918_Galaxy_S23_Ultra_Front_Green_0dfd4cd343.jpg",
+  },
+  {
+    id: 25,
+    title: "Apple Watch Ultra 2",
+    description:
+      "Rugged smartwatch built for adventurers, with advanced fitness tracking, dive features, and a stunning Always-On Retina display.",
+    category: "SmartWatch",
+    price: 89.99,
+    rating: { rate: 4.2, count: 240 },
+    image:
+      "https://istore.co.na/cdn/shop/files/Apple_Watch_Ultra_2_LTE_49mm_Titanium_Blue_Alpine_Loop_PDP_Image_Position-1__WWEN_2048x.jpg",
+  },
+  {
+    id: 26,
+    title: "Beat HeadPhone",
+    description:
+      "Stylish over-ear headphones by Beats with spatial audio, noise cancellation, and bold design. Built for immersive music experiences.",
+    category: "Headphone",
+    price: 165.99,
+    rating: { rate: 4.8, count: 95 },
+    image:
+      "https://www.beatsbydre.com/content/dam/beats/web/product/headphones/studiopro-wireless/plp/plp-studiopro-sandstone.jpg.large.2x.jpg",
+  },
+
+
+      ];
+
+      function renderProducts(products) {
+        const container = document.getElementById("product-list");
+        container.innerHTML = "";
+
+        products.forEach((product) => {
+          const card = document.createElement("div");
+          card.className =
+            "block group relative bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden";
+          card.innerHTML = `
+
+        <div class="aspect-square overflow-hidden bg-white relative">
+          <img src="${product.image}" alt="${product.title}"
+            class="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500" />
+          <div class="absolute top-4 left-4">
+            <span class="inline-block px-3 py-1.5 text-xs font-medium bg-white/90 backdrop-blur-sm text-primary-600 rounded-full shadow-sm">
+              ${product.category}
+            </span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h2 class="text-gray-900 font-bold mb-3 line-clamp-2 group-hover:text-primary-500 transition-colors">
+            ${product.title}
+          </h2>
+          <div class="flex items-center mb-4">
+            <div class="flex items-center">
+              ${renderStars(product.rating.rate)}
+              <span class="ml-2 text-sm text-gray-600">(${
+                product.rating.count
+              })</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-2xl font-bold text-primary-600">$${
+              product.price
+            }</span>
+      <div class="flex justify-between items-center mt-2">
+
+        <button class="add-to-cart-btn bg-orange-500 text-white px-3 py-2 rounded" data-id="${
+          product.id
+        }" data-name="${product.title}" data-price="${
+            product.price
+          }" data-image="${product.image}">Add to Cart</button>
+
+    `;
+          container.appendChild(card);
+        });
+
+        document.querySelectorAll(".add-to-cart-btn").forEach((button) => {
+          button.addEventListener("click", () => {
+            const product = {
+              id: Number(button.dataset.id),
+              name: button.dataset.name,
+              price: parseFloat(button.dataset.price),
+              image: button.dataset.image,
+              quantity: 1,
+            };
+            addToCart(product);
+            updateCartCount();
+          });
+        });
+      }
+
+      renderProducts(products);
+      updateCartCount();
+    </script>
+    <script src="/src/js/header.js"></script>
   </body>
 </html>

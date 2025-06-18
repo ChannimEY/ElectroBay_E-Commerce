@@ -207,18 +207,17 @@ const products = [
     rating: { rate: 4.8, count: 95 },
     image:
       "https://www.kieslect.com/wp-content/uploads/2024/01/kieslect-kr-4-1.jpg",
-  },
-  {
+  },  {
     id: 20,
-    title: "iPhone 16 Pro",
+    title: "MacBook Pro M3",
     description:
-      "Next-gen Apple smartphone with titanium build, advanced triple camera system, A18 chip, and on-device AI features for a seamless experience.",
-    category: "Phone",
-    price: 659.99,
-    rating: { rate: 4.7, count: 760 },
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQbRSovU7j24flAPsLJPTU5J7dkbT6O3mkPNH_B_cJSbBUC5mOndd4_CjuQrGQ4G_pzV8",
+      "Apple’s most powerful laptop with M3 chip, stunning Liquid Retina XDR display, and up to 22 hours of battery life for creative professionals.",
+    category: "Laptop",
+    price: 989.99,
+    rating: { rate: 4.5, count: 940 },
+    image: "https://www.ione.com.kh/wp-content/uploads/2023/11/1-2.jpg",
   },
+
   {
     id: 21,
     title: "iPhone 15",
@@ -285,15 +284,17 @@ const products = [
     image:
       "https://www.beatsbydre.com/content/dam/beats/web/product/headphones/studiopro-wireless/plp/plp-studiopro-sandstone.jpg.large.2x.jpg",
   },
-  {
+
+   {
     id: 27,
-    title: "MacBook Pro M3",
+    title: "iPhone 16 Pro",
     description:
-      "Apple’s most powerful laptop with M3 chip, stunning Liquid Retina XDR display, and up to 22 hours of battery life for creative professionals.",
-    category: "Laptop",
-    price: 989.99,
-    rating: { rate: 4.5, count: 940 },
-    image: "https://www.ione.com.kh/wp-content/uploads/2023/11/1-2.jpg",
+      "Next-gen Apple smartphone with titanium build, advanced triple camera system, A18 chip, and on-device AI features for a seamless experience.",
+    category: "Phone",
+    price: 659.99,
+    rating: { rate: 4.7, count: 760 },
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQbRSovU7j24flAPsLJPTU5J7dkbT6O3mkPNH_B_cJSbBUC5mOndd4_CjuQrGQ4G_pzV8",
   },
 ];
 
@@ -363,15 +364,12 @@ function renderCards(data) {
             $${product.price}
           </span>
          <button
-  class="add-to-cart-btn w-14 h-14 rounded-full bg-orange-500 hover:bg-primary-500 text-white shadow-md flex items-center justify-center transition-all duration-300 transform hover:scale-110"
+  class="add-to-cart-btn px-3 py-2 rounded-lg bg-orange-500 hover:bg-primary-500 text-white shadow-md flex items-center justify-center transition-all duration-300 transform hover:scale-110"
   data-id="${product.id}"
   data-title="${product.title}"
   data-price="${product.price}"
   data-image="${product.image}">
-  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
-  </svg>
+ Add To Cart
 </button>
 
         </div>
@@ -402,23 +400,7 @@ function renderCards(data) {
     `;
 }
 
-  // Event delegation
-  cardLayout.addEventListener('click', (e) => {
-    const btn = e.target.closest('.add-to-cart-btn');
-    if (btn) {
-      e.preventDefault();
 
-      const product = {
-        id: +btn.dataset.id,
-        title: btn.dataset.title,
-        price: +btn.dataset.price,
-        image: btn.dataset.image
-      };
-
-      CartManager.addToCart(product);
-      updateCartCount();
-    }
-  });
 
 function applyFilters() {
   const query = searchInput.value.toLowerCase();
